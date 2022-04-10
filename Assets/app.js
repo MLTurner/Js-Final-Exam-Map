@@ -18,8 +18,11 @@ const myMap = {
     //create markers
         const marker = L.marker([this.coordinates]).addTo(this.map);
         marker.bindPopup('<b>You are here!</b>').openPopup();
-    } 
-
+     
+    //create business markers
+        const busMarker = L.marker([this.businesses]).addTo(this.map);
+        marker.bindPopup('')
+    }
 }
 
 async function getLocation(){
@@ -29,7 +32,7 @@ async function getLocation(){
         return [latlng.coordinates.latitude, latlng.coordinates.longitude]
     }
 
-  
+async function getFourquare
       
       
 //window.onload =
@@ -53,3 +56,4 @@ async function getLocation(){
 
 
 //Map 5 nearest business type locations with Foursquare API
+
